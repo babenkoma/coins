@@ -1,0 +1,60 @@
+{
+  "name": "elk-studios",
+  "description": "ELK Studios FE Test Assignment from Maryna Babenko",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "craco start",
+    "build": "craco build",
+    "check": "pnpm run tsc && pnpm run prettier && pnpm run eslint && pnpm run test",
+    "eslint": "eslint ./src --max-warnings=0 --cache --cache-location ./.cache/eslint/src --fix",
+    "prettier": "prettier --check \"./src/**/*.{ts,tsx,md,mdx}\" --write",
+    "test": "vitest run --coverage.enabled --coverage.all && istanbul-badges-readme && prettier --write \"./README.md\"",
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@craco/craco": "7.1.0",
+    "@craco/types": "7.1.0",
+    "@types/node": "16.18.112",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.0",
+    "pixi.js": "8.4.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.26.2",
+    "react-scripts": "5.0.1",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "8.57.0",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/user-event": "13.5.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "@vitest/coverage-istanbul": "2.0.5",
+    "eslint": "8.57.0",
+    "eslint-plugin-react": "7.35.0",
+    "globals": "15.9.0",
+    "istanbul-badges-readme": "1.9.0",
+    "jsdom": "24.1.1",
+    "prettier": "3.3.3",
+    "typescript-eslint": "8.0.1",
+    "vite-tsconfig-paths": "5.0.0",
+    "vitest": "2.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

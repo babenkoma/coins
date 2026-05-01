@@ -1,0 +1,23 @@
+.game {
+	padding: 30px;
+}
+
+.game__title {
+	text-align: center;
+}
+
+.game__container {
+	margin: auto;
+	width: 800px;
+	max-width: 100%;
+	aspect-ratio: auto 800 / 450;
+	position: relative;
+
+	canvas {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
